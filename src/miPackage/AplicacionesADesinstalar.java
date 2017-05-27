@@ -7,7 +7,6 @@ public class AplicacionesADesinstalar implements Comparable {
 	private int tamañoApps;
 	private int posPrimerApp;
 
-
 	public int getCantidadApps() {
 		return cantidadApps;
 	}
@@ -40,8 +39,8 @@ public class AplicacionesADesinstalar implements Comparable {
 
 	@Override
 	public int compareTo(Object obj) {
-		if(this.cantidadApps == ((AplicacionesADesinstalar)obj).cantidadApps)
-			return this.tamañoApps - ((AplicacionesADesinstalar)obj).tamañoApps;
-		return this.cantidadApps - ((AplicacionesADesinstalar)obj).cantidadApps;
+		if (this.cantidadApps == ((AplicacionesADesinstalar) obj).cantidadApps)
+			return this.tamañoApps - ((AplicacionesADesinstalar) obj).tamañoApps;
+		return this.cantidadApps - ((AplicacionesADesinstalar) obj).cantidadApps;
 	}
 }
